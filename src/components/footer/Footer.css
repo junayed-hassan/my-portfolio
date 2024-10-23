@@ -1,0 +1,11 @@
+.subscribe-button {
+    transition: 0.7s;
+}
+
+.subscribe-button {
+    background: linear-gradient(250deg, rgba(69, 182, 216, 0.831),rgb(221, 48, 212));
+    transition: 0.5s;
+}
+.subscribe-button:hover {
+    transform: scale(1.05);
+}

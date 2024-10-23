@@ -1,0 +1,6 @@
+.services-formate:hover {
+    border: 2px solid rgb(218, 82, 32) ;
+    background-image: linear-gradient(150deg,rgb(231, 182, 247),rgb(239, 241, 137));
+    transform: scale(1.05);
+    transition: 0.4s;
+}
