@@ -5,11 +5,11 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function My_Work() {
   return (
-    <div className='myWork flex flex-col items-center justify-between gap-20 my-20 mx-16'>
+    <div id='work' className='myWork flex flex-col items-center justify-between gap-20 my-20 mx-16'>
         <h2 className='px-7 text-7xl font-semibold'>My latest work</h2>
         <div className='myWork-container grid grid-cols-3 gap-10'>
             {myWork_data.map((work,index)=>{
-                return <img className='h-[280px] w-[280px]  cursor-pointer box-border transition duration-300' key={index} src={work.w_img} alt="#" />
+                return <img className='h-[280px] w-[280px] object-cover  cursor-pointer box-border transition duration-300' key={index} src={work.w_img} alt="#" />
             })}
         </div>
         <div className='show-more flex gap-3.5 rounded-[50px] py-7 px-14 border-2 border-solid	divide-black text-xl font-medium cursor-pointer '>

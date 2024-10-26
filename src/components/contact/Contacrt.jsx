@@ -2,11 +2,52 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdAddCall } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
 
-import './Contact.css'
+const schema = yup.object({
+  name: yup.string().max(5),
+  email: yup.string(),
+  subject: yup.string(),
+  message: yup.string(),
+}).required();
+
+import './Contact.css';
+
 function Contacrt() {
+
+  const { register, handleSubmit, formState:{ errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
+
+    const onSubmit = async (event) => {
+        handleSubmit(onSubmit);
+        event.preventDefault();
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "16e7bc05-ef2d-4744-a7f2-601057c80a1b");
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
+    
+        if (res.success) {
+          alert(res.message);
+        }
+      };
+
+
   return (
-    <div className='contact flex flex-col items-center justify-between gap-20 my-20 mx-16'>
+    <div id="contact" className='contact flex flex-col items-center justify-between gap-20 my-20 mx-16'>
         <h1 className="px-7 text-7xl font-semibold">Gat in touch</h1>
         <div className='contact-section flex gap-32'>
             <div className='contact-left flex flex-col gap-7'>
@@ -27,13 +68,21 @@ function Contacrt() {
                     </div>
                 </div>
             </div>
-            <form className="flex flex-col items-start gap-5">
-                <label className="text-xl font-medium" htmlFor="">Your Name</label>
-                <input className="border-none w-[700px] h-[78px] pl-5 rounded-[4px] text-xl bg-purple-50 text-[#A0A0A0] font-Lora outline-none" type="text" placeholder="Enter your name" name="name"/>
-                <label className="text-xl font-medium" htmlFor="">Your Email</label>
-                <input className="border-none w-[700px] h-[78px] pl-5 rounded-[4px] text-xl bg-purple-50 text-[#A0A0A0] font-Lora outline-none" type="email" placeholder="Enter your email" name="email"/>
-                <label className="text-xl font-medium" htmlFor="">Wright your message here</label>
-                <textarea className="w-[650px] border-none p-6 rounded-[4px] text-xl bg-purple-50 text-[#A0A0A0] font-Lora outline-none" name="message" placeholder="Enter your message" rows={4} ></textarea>
+            <form onSubmit={onSubmit} className="flex flex-col items-start gap-2 bg-pink-50 py-5 px-5 rounded-md">
+                <div className="flex gap-5 mb-2">
+                  <div>
+                    <input  {...register("name")} id="name" className="border-none  w-[312px] pl-5 rounded-[4px] py-5 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="text" placeholder="Enter your name" name="name"/>
+                    <p className="text-xs text-red-600">{errors.name?.message}</p>
+                  </div>
+                  <div>
+                    <input  {...register("email")} id="email" className="border-none  w-[312px] pl-5 rounded-[4px] py-5 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="email" placeholder="Enter your email" name="email"/>
+                    <p className="text-xs text-red-600">{errors.email?.message}</p>
+                  </div>
+                </div>
+                <input {...register("subject")} id="subject" className="border-none  w-[650px] pl-5 rounded-[4px] py-5 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="text" placeholder="Enter your Subject" name="Subject"/>
+                <p className="text-xs text-red-600">{errors.subject?.message}</p>
+                <textarea {...register("message")}  id="message" className="w-[650px] border-none p-6 rounded-[4px] text-base shadow-md text-[#A0A0A0] font-Lora outline-none" name="message" placeholder="Enter your message" rows={3} ></textarea>
+                <p className="text-xs text-red-600">{errors.message?.message}</p>
                 <button className='contact-submit py-5 px-14 rounded-[50px] text-xl border-none cursor-pointer text-fuchsia-100' type="submit">Submit now</button>
             </form>
         </div>
