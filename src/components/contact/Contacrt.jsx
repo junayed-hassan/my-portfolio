@@ -45,7 +45,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className='contact flex flex-col items-center justify-between gap-16 my-16 mx-16 font-Lora'>
+    <div id="contact" className='contact flex flex-col items-center justify-between gap-16 mt-20 mb-16 mx-16 font-Lora'>
       <h1 className="px-7 text-7xl font-semibold leading-6">Get in touch</h1>
       <div className='contact-section flex gap-28'>
         <div className='contact-left flex flex-col gap-7'>
