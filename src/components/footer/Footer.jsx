@@ -9,7 +9,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className='footer flex flex-col gap-7 my-20 mx-16'>
+    <div className='footer flex flex-col gap-7 my-20 mx-16 font-Lora'>
         <div className='footer-top flex justify-between'>
             <div className='footer-top-left'>
               <img className='w-10' src={Logo} alt="" />
@@ -17,7 +17,7 @@ function Footer() {
             </div>
             <div className='footer-top-right m-5'>
               <h3 className='text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap'>social media activity</h3>
-              <div className='flex items-center gap-3 ms-2 mt-5 text-xl'>
+              <div className='flex items-center gap-3 ms-3 mt-5 text-xl'>
                 <ImLinkedin />
                 <FaXTwitter />
                 <FaInstagramSquare />
