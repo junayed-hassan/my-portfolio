@@ -1,6 +1,12 @@
 import Logo from '../../assets/logo.png';
-import { AiOutlineUser } from "react-icons/ai";
+import { ImLinkedin } from "react-icons/im";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import { BsYoutube } from "react-icons/bs";
 import './Footer.css';
+
 function Footer() {
   return (
     <div className='footer flex flex-col gap-7 my-20 mx-16'>
@@ -9,12 +15,16 @@ function Footer() {
               <img className='w-10' src={Logo} alt="" />
                <p className='text-lx w-[350px]'>I am a frontend developer from,Bangladesh  with 10 years of experience in companies like Microsoft, Tesla and Apple.</p>
             </div>
-            <div className='footer-top-right flex items-center gap-5'>
-                <div className='footer-email flex py-5 px-7  gap-5 rounded-[50px] bg-pink-50'> 
-                    <AiOutlineUser  className='mt-1'/>
-                    <input className='outline-none border-none  bg-transparent' type="email" placeholder='Enter your email here'/>
-                </div>
-                <div className='subscribe-button py-4 px-10 rounded-[50px] text-xl border-none cursor-pointer text-fuchsia-100'>Subscribe</div>
+            <div className='footer-top-right m-5'>
+              <h3 className='text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap'>social media activity</h3>
+              <div className='flex items-center gap-3 ms-2 mt-5 text-xl'>
+                <ImLinkedin />
+                <FaXTwitter />
+                <FaInstagramSquare />
+                <FaTelegramPlane />
+                <BsYoutube />
+                <FaFacebook />
+              </div>
             </div>
         </div>
         <hr />

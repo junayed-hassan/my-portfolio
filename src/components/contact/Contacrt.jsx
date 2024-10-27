@@ -11,7 +11,7 @@ import './Contact.css';
 const schema = yup.object({
   name: yup.string().required("Name is required").min(5, "Name must be at least 5 characters"),
   email: yup.string().email("Invalid email format").required("Email is required"),
-  subject: yup.string().min(6, "Message must be at least 6 characters"),
+  subject: yup.string().required("subject is required").min(6, "subject must be at least 6 characters"),
   message: yup.string().required("Message is required").min(12, "Message must be at least 12 characters"),
 }).required();
 
@@ -58,7 +58,7 @@ function Contact() {
             </div>
             <div className='flex items-center gap-5'>
               <MdAddCall className="text-2xl" />
-              <p className="text-base">+8801948493880</p>
+              <a className="text-base" href="tel:+8801948493880">+8801948493880</a>
             </div>
             <div className='flex items-center gap-5'>
               <FaLocationDot className="text-2xl" />
