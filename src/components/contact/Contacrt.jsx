@@ -45,9 +45,9 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className='contact flex flex-col items-center justify-between gap-20 my-20 mx-16 font-Lora'>
-      <h1 className="px-7 text-7xl font-semibold">Get in touch</h1>
-      <div className='contact-section flex gap-32'>
+    <div id="contact" className='contact flex flex-col items-center justify-between gap-16 my-16 mx-16 font-Lora'>
+      <h1 className="px-7 text-7xl font-semibold leading-6">Get in touch</h1>
+      <div className='contact-section flex gap-28'>
         <div className='contact-left flex flex-col gap-7'>
           <h2 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap">Let's talk</h2>
           <p className="text-xl leading-8 max-w-[530px]">I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>

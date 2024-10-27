@@ -2,13 +2,13 @@ import aboutImg from '../../assets/about.jpg'
 import './About.css'
 function About() {
   return (
-    <div id='about' className='about font-Lora flex items-center justify-center flex-col gap-20 my-20 mx-16'>
+    <div id='about' className='about font-Lora flex items-center justify-center flex-col gap-12 my-14 mx-16'>
         <h2 className='px-7 text-7xl font-semibold'>About Me</h2>
         <div className='about-section flex gap-20'>
             <div className='about-left mt-3'>
                 <img src={aboutImg } alt="img" />
             </div>
-            <div className='about-right flex gap-20 flex-col'>
+            <div className='about-right flex gap-12 flex-col mt-4'>
                 <div className='about-para flex flex-col gap-5 text-xl font-medium'>
                     <p>I am an experienced frontend developer with over a decade of  professional experience in the field  Throughout my career, I have had the privilege  of collaborating with prestigious organizations,  contributing to success and growth.</p>
                     <p>My passion for frontend developnent   is not anly reflected in my extensive experience  but also in the enthusiasm and dedication  I bring to each project.</p>

@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function My_Work() {
   return (
-    <div id='work' className='myWork flex flex-col items-center justify-between gap-20 my-20 mx-16'>
+    <div id='work' className='myWork flex flex-col items-center justify-between gap-16 my-10 mx-16'>
         <h2 className='px-7 text-7xl font-semibold'>My latest work</h2>
         <div className='myWork-container grid grid-cols-3 gap-10'>
             {myWork_data.map((work,index)=>{
