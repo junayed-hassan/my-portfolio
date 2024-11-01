@@ -11,5 +11,45 @@
     transform: scale(1.05);
 }
 
+.nev-mob-open {
+    display: none;
+}
+@media(max-width:768px){
+    navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nev-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .nev-mob-close {
+        display: block;
+        color: #fff;
+
+    }
+    .nav-menu {
+        position: fixed;
+        color: #fff;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 20px;
+        background-color: black;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li {
+        font-size: 20px;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
 
 

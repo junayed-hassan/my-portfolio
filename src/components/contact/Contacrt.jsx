@@ -45,13 +45,13 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className='contact flex flex-col items-center justify-between gap-16 mt-20 mb-16 mx-16 font-Lora'>
-      <h1 className="px-7 text-7xl font-semibold leading-6">Get in touch</h1>
-      <div className='contact-section flex gap-28'>
-        <div className='contact-left flex flex-col gap-7'>
-          <h2 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap">Let's talk</h2>
-          <p className="text-xl leading-8 max-w-[530px]">I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
-          <div className='flex flex-col gap-5 text-[22px]'>
+    <div id="contact" className='contact flex flex-col items-center justify-between xl lg:gap-16 md:gap-7 mt-20 mb-16 mx-16 font-Lora'>
+      <h1 className="px-7 font-semibold leading-6 lg:text-7xl md:text-6xl max-[448px]:text-4xl max-[320px]:text-2xl whitespace-nowrap">Get in touch</h1>
+      <div className='contact-section lg:flex md:block xl:gap-28 lg:gap-2'>
+        <div className='contact-left flex flex-col lg:gap-7 md:gap-4 md:mb-8'>
+          <h2 className="lg:text-6xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap">Let's talk</h2>
+          <p className="text-xl leading-8 max-w-[530px] text-justify">I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
+          <div className='flex flex-col lg:gap-5 md:gap-3 text-[22px]'>
             <div className='flex items-center gap-5'>
               <MdOutlineMarkEmailUnread className="text-2xl" />
               <p className="text-base">junayedhassan102045@gmail.com</p>
@@ -67,19 +67,19 @@ function Contact() {
           </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-start gap-2 bg-pink-50 py-5 px-5 rounded-md shadow-sm">
-          <div className="flex gap-5 mb-2">
-            <div>
-              <input {...register("name")} id="name" className="border-none w-[312px] pl-5 rounded-[4px] py-5 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="text" placeholder="Enter your name" />
+          <div className="md:flex max-[448px]:block gap-5 mb-2">
+            <div className="max-[448px]:mb-4">
+              <input {...register("name")} id="name" className="border-none w-[312px] max-[448px]:w-[250px] pl-5 rounded-[4px] md:py-5 max-[448px]:py-3 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="text" placeholder="Enter your name" />
               <p className="text-xs text-red-600 ms-1">{errors.name?.message}</p>
             </div>
             <div>
-              <input {...register("email")} id="email" className="border-none w-[312px] pl-5 rounded-[4px] py-5 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="email" placeholder="Enter your email" />
+              <input {...register("email")} id="email" className="border-none w-[312px] max-[448px]:w-[250px] pl-5 rounded-[4px] md:py-5 max-[448px]:py-3 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="email" placeholder="Enter your email" />
               <p className="text-xs text-red-600 ms-1">{errors.email?.message}</p>
             </div>
           </div>
-          <input {...register("subject")} id="subject" className="border-none w-[650px] pl-5 rounded-[4px] py-5 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="text" placeholder="Enter your Subject" />
+          <input {...register("subject")} id="subject" className="border-none w-[650px]  max-[448px]:w-[380px] pl-5 rounded-[4px] md:py-5 max-[448px]:py-3 shadow-md text-base text-[#A0A0A0] font-Lora outline-none" type="text" placeholder="Enter your Subject" />
           <p className="text-xs text-red-600 ms-1">{errors.subject?.message}</p>
-          <textarea {...register("message")} id="message" className="w-[650px] border-none p-6 rounded-[4px] text-base shadow-md text-[#A0A0A0] font-Lora outline-none" placeholder="Enter your message" rows={3}></textarea>
+          <textarea {...register("message")} id="message" className="w-[650px]  max-[448px]:w-[380px] border-none p-6 rounded-[4px] text-base shadow-md text-[#A0A0A0] font-Lora outline-none" placeholder="Enter your message" rows={3}></textarea>
           <p className="text-xs text-red-600 ms-1">{errors.message?.message}</p>
           <button className='contact-submit py-5 px-14 rounded-[50px] text-xl border-none cursor-pointer text-fuchsia-100 shadow-md' type="submit">Submit now</button>
         </form>
