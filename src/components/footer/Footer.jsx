@@ -10,7 +10,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div className='footer flex flex-col gap-7 my-20 mx-16 font-Lora'>
-        <div className='footer-top flex justify-between'>
+        <div className='footer-top md:flex max-[448px]:block justify-between'>
             <div className='footer-top-left'>
               <img className='w-10' src={Logo} alt="" />
                <p className='text-lx w-[350px]'>I am a frontend developer from,Bangladesh  with 10 years of experience in companies like Microsoft, Tesla and Apple.</p>
@@ -28,9 +28,9 @@ function Footer() {
             </div>
         </div>
         <hr />
-        <div className='footer-top-button flex justify-between text-[16px]'>
-            <p> @  2024 junayed hassan . All rights reserved.</p>
-            <div className='flex gap-5'>
+        <div className='footer-top-button flex justify-around text-[16px]'>
+            <p className='whitespace-nowrap'> @  2024 junayed hassan . All rights reserved.</p>
+            <div className='flex gap-5 md:hidden max-[448px]:hidden '>
               <p> Term of services </p>
               <p>Privacy policy</p>
               <p>Connect With Me</p>

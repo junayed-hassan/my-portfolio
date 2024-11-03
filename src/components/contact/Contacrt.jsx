@@ -48,21 +48,21 @@ function Contact() {
     <div id="contact" className='contact flex flex-col items-center justify-between xl lg:gap-16 md:gap-7 mt-20 mb-16 mx-16 font-Lora'>
       <h1 className="px-7 font-semibold leading-6 lg:text-7xl md:text-6xl max-[448px]:text-4xl max-[320px]:text-2xl whitespace-nowrap">Get in touch</h1>
       <div className='contact-section lg:flex md:block xl:gap-28 lg:gap-2'>
-        <div className='contact-left flex flex-col lg:gap-7 md:gap-4 md:mb-8'>
-          <h2 className="lg:text-6xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap">Let's talk</h2>
-          <p className="text-xl leading-8 max-w-[530px] text-justify">I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
-          <div className='flex flex-col lg:gap-5 md:gap-3 text-[22px]'>
-            <div className='flex items-center gap-5'>
-              <MdOutlineMarkEmailUnread className="text-2xl" />
-              <p className="text-base">junayedhassan102045@gmail.com</p>
+        <div className='contact-left flex flex-col lg:gap-7 md:gap-4 max-[448px]:gap-3 md:mb-8 max-[448px]:p-5'>
+          <h2 className="max-[448px]:text-3xl lg:text-6xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap">Let's talk</h2>
+          <p className="max-[448px]:text-base text-xl leading-8 max-w-[530px] text-justify">I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
+          <div className='flex flex-col lg:gap-5 md:gap-3 text-[22px] max-[448px]:gap-2'>
+            <div className='flex items-center gap-5 '>
+              <MdOutlineMarkEmailUnread className="max-[448px]:text-xl text-2xl" />
+              <p className="max-[448px]:text-sm text-base">junayedhassan102045@gmail.com</p>
             </div>
             <div className='flex items-center gap-5'>
-              <MdAddCall className="text-2xl" />
-              <a className="text-base" href="tel:+8801948493880">+8801948493880</a>
+              <MdAddCall className="max-[448px]:text-xl text-2xl" />
+              <a className="max-[448px]:text-sm text-base" href="tel:+8801948493880">+8801948493880</a>
             </div>
             <div className='flex items-center gap-5'>
-              <FaLocationDot className="text-2xl" />
-              <p className="text-base">Dhaka, Bangladesh</p>
+              <FaLocationDot className="max-[448px]:text-xl text-2xl" />
+              <p className="max-[448px]:text-sm text-base">Dhaka, Bangladesh</p>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ function Contact() {
           <p className="text-xs text-red-600 ms-1">{errors.subject?.message}</p>
           <textarea {...register("message")} id="message" className="w-[650px]  max-[448px]:w-[380px] border-none p-6 rounded-[4px] text-base shadow-md text-[#A0A0A0] font-Lora outline-none" placeholder="Enter your message" rows={3}></textarea>
           <p className="text-xs text-red-600 ms-1">{errors.message?.message}</p>
-          <button className='contact-submit py-5 px-14 rounded-[50px] text-xl border-none cursor-pointer text-fuchsia-100 shadow-md' type="submit">Submit now</button>
+          <button className='contact-submit max-[448px]:text-xs max-[448px]:py-2 max-[448px]:px-7 py-5 px-14 rounded-[50px] text-xl border-none cursor-pointer text-fuchsia-100 shadow-md' type="submit">Submit now</button>
         </form>
       </div>
     </div>
