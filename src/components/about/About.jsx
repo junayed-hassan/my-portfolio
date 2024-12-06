@@ -36,16 +36,16 @@ function About() {
         <div className='about-acbS flex justify-around w-[100%] mb-20 max-[448px]:mt-3'>
             <div className='about-acb transition-all ease-linear duration-500 hover:scale-105 flex flex-col items-center gap-2.5 max-[448px]:gap-0'>
                 <h2 className='lg:text-5xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>10+</h2>
-                <p className='lg:text-xl md:text-base max-[448px]:text-[7px] max-[320px]:text-[5px] font-medium'>YEARS OF EXPERIENCE</p>
+                <p className='lg:text-xl md:text-base max-[448px]:text-[7px] max-[320px]:text-[5px] font-medium'>Month OF EXPERIENCE</p>
             </div>
             <span className='block  w-1 h-30 bg-gradient-to-b from-pink-500 to-violet-500'></span>
             <div className='about-acb transition-all ease-linear duration-500 hover:scale-105 flex flex-col items-center gap-2.5 max-[448px]:gap-0'>
-                <h2 className='lg:text-5xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>90+</h2>
+                <h2 className='lg:text-5xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>20+</h2>
                 <p className='lg:text-xl md:text-base max-[448px]:text-[7px] max-[320px]:text-[5px] font-medium'>PROJECTS COMPLETED</p>
             </div>
             <span className='block  w-1 h-30 bg-gradient-to-b from-pink-500 to-violet-500'></span>
             <div className='about-acb transition-all ease-linear duration-500 hover:scale-105 flex flex-col items-center gap-2.5 max-[448px]:gap-0'>
-                <h2 className='lg:text-5xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>15+</h2>
+                <h2 className='lg:text-5xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>05+</h2>
                 <p className='lg:text-xl md:text-base max-[448px]:text-[7px] max-[320px]:text-[5px] font-medium'>HAPPY CLIENTS</p>
             </div>
         </div>

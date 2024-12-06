@@ -4,7 +4,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
-import { BsYoutube } from "react-icons/bs";
 import './Footer.css';
 
 function Footer() {
@@ -13,17 +12,16 @@ function Footer() {
         <div className='footer-top md:flex max-[448px]:block justify-between'>
             <div className='footer-top-left'>
               <img className='w-10' src={Logo} alt="" />
-               <p className='text-lx w-[350px]'>I am a frontend developer from,Bangladesh  with 10 years of experience in companies like Microsoft, Tesla and Apple.</p>
+               <p className='text-lx w-[350px]'>I am a frontend developer from,Bangladesh  with 10 Month of experience in companies all over the world...</p>
             </div>
             <div className='footer-top-right m-5'>
               <h3 className='text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap'>social media activity</h3>
               <div className='flex items-center gap-3 ms-3 mt-5 text-xl'>
-                <ImLinkedin />
-                <FaXTwitter />
-                <FaInstagramSquare />
-                <FaTelegramPlane />
-                <BsYoutube />
-                <FaFacebook />
+                <a target="_blank" href="https://www.linkedin.com/in/junayed-hassan/"><ImLinkedin /></a>
+                <a target="_blank" href="https://x.com/JHassan96185"><FaXTwitter /></a>
+                <a target="_blank" href="https://www.instagram.com/junayedhassan83/"><FaInstagramSquare /></a>
+                <a target="_blank" href="https://t.me/+88001948493880"><FaTelegramPlane /></a>
+                <a target="_blank" href="https://www.facebook.com/junayed.hassan.50999"><FaFacebook /></a>
               </div>
             </div>
         </div>

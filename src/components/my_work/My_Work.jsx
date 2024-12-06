@@ -1,6 +1,6 @@
 import myWork_data from '../../assets/mywork_data'
 import './My_Work.css'
-import { FaArrowRight } from "react-icons/fa6";
+// import { FaArrowRight } from "react-icons/fa6";
 
 
 function My_Work() {
@@ -12,10 +12,10 @@ function My_Work() {
                 return <img className='h-[200px] w-[350px] max-[448px]:mb-5  cursor-pointer box-border transition duration-300' key={index} src={work.w_img} alt="#" />
             })}
         </div>
-        <div className='show-more flex gap-3.5 rounded-[50px] py-5 px-10 border-2 border-solid	divide-black text-xl font-medium cursor-pointer max-[448px]:hidden'>
+        {/* <div className='show-more flex gap-3.5 rounded-[50px] py-5 px-10 border-2 border-solid	divide-black text-xl font-medium cursor-pointer max-[448px]:hidden'>
             <p>Show More</p>
             <FaArrowRight className='mt-1.5'/>
-        </div>
+        </div> */}
     </div>
   )
 }
