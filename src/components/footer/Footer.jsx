@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className='footer flex flex-col gap-7 my-20 max-[448px]:mx-3 mx-16 font-Lora'>
         <div className='footer-top md:flex max-[448px]:block justify-between'>
-            <div className='footer-top-left'>
+            <div className='footer-top-left max-[448px]:ml-2'>
               <img className='w-10' src={Logo} alt="" />
                <p className='text-lx max-[448px]:w-[310px] w-[350px]'>I am a frontend developer from,Bangladesh  with 10 Month of experience in companies all over the world...</p>
             </div>
