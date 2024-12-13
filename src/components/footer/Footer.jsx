@@ -8,11 +8,11 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className='footer flex flex-col gap-7 my-20 mx-16 font-Lora'>
+    <div className='footer flex flex-col gap-7 my-20 max-[448px]:mx-3 mx-16 font-Lora'>
         <div className='footer-top md:flex max-[448px]:block justify-between'>
             <div className='footer-top-left'>
               <img className='w-10' src={Logo} alt="" />
-               <p className='text-lx w-[350px]'>I am a frontend developer from,Bangladesh  with 10 Month of experience in companies all over the world...</p>
+               <p className='text-lx max-[448px]:w-[310px] w-[350px]'>I am a frontend developer from,Bangladesh  with 10 Month of experience in companies all over the world...</p>
             </div>
             <div className='footer-top-right m-5'>
               <h3 className='text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap'>social media activity</h3>
@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <hr />
         <div className='footer-top-button flex justify-around text-[16px]'>
-            <p className='whitespace-nowrap'> @  2024 junayed hassan . All rights reserved.</p>
+            <p className='whitespace-nowrap max-[448px]:text-[14px]'> @  2024 junayed hassan . All rights reserved.</p>
             <div className='flex gap-5 md:hidden max-[448px]:hidden '>
               <p> Term of services </p>
               <p>Privacy policy</p>
