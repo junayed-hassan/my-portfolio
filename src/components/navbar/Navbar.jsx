@@ -20,7 +20,7 @@ function Navbar() {
   };
 
   return (
-    <div className='navbar font-Lora flex justify-between items-center my-5 mx-16'>
+    <div className='navbar font-Lora flex justify-between items-center my-5 max-[448px]:mx-4 mx-16'>
       <img className='w-14' src={Logo} alt="logo" />
       <RiMenuUnfold4Fill onClick={openMenu} className='nev-mob-open text-4xl' />
       <ul ref={menuRef} className='nav-menu ms-10 flex items-center gap-7 text-lg font-medium cursor-pointer'>
