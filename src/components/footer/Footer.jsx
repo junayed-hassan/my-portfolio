@@ -12,9 +12,9 @@ function Footer() {
         <div className='footer-top md:flex max-[448px]:block justify-between'>
             <div className='footer-top-left max-[448px]:ml-2'>
               <img className='w-10' src={Logo} alt="" />
-               <p className='text-lx max-[448px]:w-[310px] w-[350px]'>I am a frontend developer from,Bangladesh  with 10 Month of experience in companies all over the world...</p>
+               <p className='text-lx max-[375px]:w-[310px] w-[350px]'>I am a frontend developer from,Bangladesh  with 10 Month of experience in companies all over the world...</p>
             </div>
-            <div className='footer-top-right m-5'>
+            <div className='footer-top-right m-5 max-[448px]:ml-[13%]'>
               <h3 className='text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r to-violet-500 from-pink-500 whitespace-nowrap'>social media activity</h3>
               <div className='flex items-center gap-3 ms-3 mt-5 text-xl'>
                 <a target="_blank" href="https://www.linkedin.com/in/junayed-hassan/"><ImLinkedin /></a>
