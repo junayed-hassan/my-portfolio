@@ -5,7 +5,7 @@ import './My_Work.css'
 
 function My_Work() {
   return (
-    <div id='work' className='myWork flex flex-col items-center justify-between lg:gap-16 md:gap-7 max-[448px]:gap-6 my-10 mx-16'>
+    <div id='work' className='myWork flex flex-col items-center justify-between lg:gap-16 md:gap-7 max-[448px]:gap-6 my-10 mx-16 max-[448px]:mx-4'>
         <h2 className='px-7 lg:text-7xl md:text-6xl font-semibold max-[448px]:text-4xl max-[320px]:text-2xl whitespace-nowrap'>My latest work</h2>
         <div className='myWork-container grid lg:grid-cols-3 md:grid-cols-2 xl:gap-10 md:gap-6 '>
             {myWork_data.map((work,index)=>{

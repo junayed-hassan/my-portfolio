@@ -2,7 +2,7 @@ import aboutImg from '../../assets/about.jpg'
 import './About.css'
 function About() {
   return (
-    <div id='about' className='about font-Lora flex items-center justify-center flex-col lg:gap-12 md:gap-6 lg:my-14 md:my-7 mx-16'>
+    <div id='about' className='about font-Lora flex items-center justify-center flex-col lg:gap-12 md:gap-6 lg:my-14 md:my-7 max-[448px]:mx-7 mx-16'>
         <h2 className='px-7 lg:text-7xl font-semibold md:text-6xl max-[448px]:text-4xl whitespace-nowrap'>About Me</h2>
         <div className='about-section flex gap-20 lg:gap-10 md:gap-0 max-[448px]:gap-0'>
             <div className='about-left mt-3 '>

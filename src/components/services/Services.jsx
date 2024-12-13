@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function Services() {
   return (
-    <div id='services' className='services flex flex-col items-center justify-between lg:gap-16 md:gap-7 max-[448px]:gap-5 lg:my-16 md:py-0 mx-16 font-Lora'>
+    <div id='services' className='services flex flex-col items-center justify-between lg:gap-16 md:gap-7 max-[448px]:gap-5 lg:my-16 md:py-0 mx-16 max-[448px]:mx-7 font-Lora'>
         <h2 className='px-7 lg:text-7xl md:text-6xl font-semibold max-[448px]:text-4xl whitespace-nowrap'>My Services</h2>
         <div className='services-container grid lg:grid-cols-3 md:grid-cols-2 xl:gap-10 md:gap-6 mb-20'>
             {Services_Data.map((service,index)=>{
